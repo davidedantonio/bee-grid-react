@@ -1,0 +1,42 @@
+// stylelint-disable declaration-no-important
+
+.docs-header {
+  padding: 10px;
+
+  .brand {
+    display: inline-block;
+    width: 40px;
+    margin-right: 1rem;
+  }
+
+  .menu {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      display: inline;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .menu-svg {
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.4rem;
+        vertical-align: text-top;
+        fill: color-level($teal, -8);
+
+        &:hover {
+          fill: $white !important;
+        }
+      }
+
+      .active {
+        color: $white;
+      }
+    }
+  }
+}

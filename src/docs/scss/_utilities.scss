@@ -1,0 +1,61 @@
+@each $color-name, $color-value in $colors {
+  .docs-background-#{$color-name} {
+    color: get-color-contrast($color-value);
+    background: $color-value;
+
+    a {
+      color: color-level($color-value, -8);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: get-color-contrast($color-value);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mt-#{$i} {
+    margin-top: #{$i}rem;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}rem;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}rem;
+  }
+
+  .m-#{$i} {
+    margin: #{$i}rem;
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i}rem;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}rem;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}rem;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}rem;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}rem;
+  }
+
+}
+

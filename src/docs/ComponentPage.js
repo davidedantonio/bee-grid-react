@@ -7,7 +7,7 @@ const ComponentPage = ({ component }) => {
   const { name, description, props, examples } = component;
 
   return (
-    <div className="component-page">
+    <main>
       <h2>{ name }</h2>
       <p>{ description }</p>
 
@@ -24,7 +24,7 @@ const ComponentPage = ({ component }) => {
         <Properties props={props} /> :
         "This component have no props."
       }
-    </div>
+    </main>
   )
 };
 

@@ -1,0 +1,331 @@
+
+// Greys
+$white:     #fff !default;
+$grey-50:   #fafafa !default;
+$grey-100:  #f5f5f5 !default;
+$grey-200:  #eee !default;
+$grey-300:  #e0e0e0 !default;
+$grey-400:  #9e9e9e !default;
+$grey-600:  #757575 !default;
+$grey-700:  #616161 !default;
+$grey-800:  #424242 !default;
+$grey-900:  #212121 !default;
+$black:     #000 !default;
+
+// Colors
+$red:         #f44336 !default;
+$pink:        #e91e63 !default;
+$purple:      #9c27b0 !default;
+$deep-purple: #673ab7 !default;
+$indigo:      #3f51b5 !default;
+$blue:        #2196f3 !default;
+$light-blue:  #03a9f4 !default;
+$cyan:        #00bcd4 !default;
+$teal:        #009688 !default;
+$green:       #4caf50 !default;
+$light-green: #8bc34a !default;
+$lime:        #cddc39 !default;
+$amber:       #ffc107 !default;
+$orange:      #ff9800 !default;
+$deep-orange: #ff5722 !default;
+$brown:       #795548 !default;
+$grey:        #9e9e9e !default;
+$blue-grey:   #607d8b !default;
+
+$theme-color-default: $teal !default;
+$grid-system-container-bg: #37bdaf !default;
+$grid-item-bg: #37bdaf !default;
+
+// stylelint-disable
+$colors: () !default;
+$colors: map-merge((
+  "red":        $red,
+  "pink":       $pink,
+  "purple":     $purple,
+  "deep-purple":  $deep-purple,
+  "indigo":       $indigo,
+  "blue":         $blue,
+  "light-blue":   $light-blue,
+  "cyan":         $cyan,
+  "teal":         $teal,
+  "green":        $green,
+  "light-green":  $light-green,
+  "lime":         $lime,
+  "amber":        $amber,
+  "orange":       $orange,
+  "deep-orange":  $deep-orange,
+  "brown":        $brown,
+  "blue-grey":    $blue-grey,
+  "white":        $white,
+  "grey":         $grey-600,
+  "grey-dark":    $grey-800,
+  "black":        $black
+), $colors);
+
+$border-width:                1px !default;
+
+$theme-color-interval: 8% !default;
+$font-family: "Roboto", sans-serif !default;
+$font-size: 1rem !default;
+$font-weight: 300 !default;
+$line-height: 1.4rem !default;
+$body-color: $black !default;
+$body-bg: $white !default;
+
+$headings-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 1rem !default;
+
+$link-color: $theme-color-default !default;
+$link-hover-color: $grey-800 !default;
+$link-decoration: none !default;
+$link-hover-decoration: underline !default;
+
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm:       .3rem !default;
+
+$table-bg:                    transparent !default;
+$table-accent-bg:             rgba($black, .05) !default;
+$table-hover-bg:              rgba($black, .075) !default;
+$table-active-bg:             $table-hover-bg !default;
+
+$table-border-width:          $border-width !default;
+$table-border-color:          $grey-300 !default;
+
+$table-head-bg:               $grey-200 !default;
+$table-head-color:            $grey-700 !default;
+$table-caption-color:         $grey-700 !default;
+$label-margin-bottom:         .5rem !default;
+
+//
+// BeeGrid
+//
+//
+
+// stylelint-disable
+$white:       #fff !default;
+
+// Layouts default values
+$header-height:   minmax(56px, auto) !default;
+$footer-height:   minmax(max-content, 50px) !default;
+$nav-width:       250px !default;
+$nav-height:      minmax(56px, auto) !default;
+$aside-width:     200px !default;
+
+// Grid
+$grid-columns-number:   12 !default;
+$grid-item-padding:     1rem !default;
+
+// Grid breakpoints
+//
+// Define the maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$grid-breakpoints: (
+  xs: 0px,
+  sm: 480px,
+  md: 960px,
+  lg: 1140px,
+  xl: 1280px
+) !default;
+
+// Grid widths
+$grid-widths: (
+  sm: 640px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1440px
+) !default;
+
+// Define the grid gap dimensions at which your layout will change,
+// adapting to different screen sizes
+$grid-breakpoints-gap: (
+  xl: 24px,
+  lg: 20px,
+  md: 18px,
+  sm: 16px,
+  xs: 12px
+) !default;
+
+// Define the grid default behaviour for each breakpoint.
+$grid-breakpoints-grid: (
+  xl: $grid-columns-number,
+  lg: $grid-columns-number,
+  md: ceil($grid-columns-number / 2),
+  sm: ceil($grid-columns-number / 3),
+  xs: $grid-columns-number / $grid-columns-number
+) !default;
+
+// predefined layouts
+$grid-layouts: (
+  1: (
+    grid-template-areas:
+      "head head"
+      "main main",
+    grid-template-rows: $header-height 1fr
+  ),
+  2: (
+    grid-template-areas:
+      "head head"
+      "nav main",
+      grid-template-rows: $header-height 1fr,
+      grid-template-columns: $nav-width 1fr
+  ),
+  3: (
+    grid-template-areas:
+      "nav head"
+      "nav main",
+      grid-template-rows: $header-height 1fr,
+      grid-template-columns: $nav-width 1fr
+  ),
+  4: (
+    grid-template-areas:
+      "head head"
+      "nav main"
+      "foot foot",
+      grid-template-rows: $header-height 1fr $footer-height,
+      grid-template-columns: $nav-width 1fr
+  ),
+  5: (
+    grid-template-areas:
+      "head head"
+      "nav main"
+      "nav foot",
+      grid-template-rows: $header-height 1fr $footer-height,
+      grid-template-columns: $nav-width 1fr
+  ),
+  6: (
+    grid-template-areas:
+      "nav head"
+      "nav main"
+      "nav foot",
+      grid-template-rows: $header-height 1fr $footer-height,
+      grid-template-columns: $nav-width 1fr
+  ),
+  7: (
+    grid-template-areas:
+      "head head head"
+      "nav main aside"
+      "foot foot foot",
+      grid-template-rows: $header-height 1fr $footer-height,
+      grid-template-columns: $nav-width 1fr $aside-width
+  ),
+  8: (
+    grid-template-areas:
+      "head head head"
+      "nav main aside",
+      grid-template-rows: $header-height 1fr,
+      grid-template-columns: $nav-width 1fr $aside-width
+  ),
+  9: (
+    grid-template-areas:
+      "nav head head"
+      "nav main aside",
+      grid-template-rows: $header-height 1fr,
+      grid-template-columns: $nav-width 1fr $aside-width
+  ),
+  10: (
+    grid-template-areas:
+      "nav head head"
+      "nav main aside"
+      "nav foot foot",
+      grid-template-rows: $header-height 1fr $footer-height,
+      grid-template-columns: $nav-width 1fr $aside-width
+  ),
+) !default;
+
+$grid-breakpoints-layouts: (
+  sm: (
+    1: (
+      grid-template-areas:
+        "head"
+        "main",
+      grid-template-rows: $header-height 1fr,
+      grid-template-columns: 1fr
+    ),
+    2: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main",
+        grid-template-rows: $header-height $nav-height 1fr,
+        grid-template-columns: 1fr
+    ),
+    3: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main",
+        grid-template-rows: $header-height $nav-height 1fr,
+        grid-template-columns: 1fr
+    ),
+    4: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "foot",
+        grid-template-rows: $header-height $nav-height 1fr $footer-height,
+        grid-template-columns: 1fr
+    ),
+    5: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "foot",
+        grid-template-rows: $header-height $nav-height 1fr $footer-height,
+        grid-template-columns: 1fr
+    ),
+    6: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "foot",
+        grid-template-rows: $header-height $nav-height 1fr $footer-height,
+        grid-template-columns: 1fr
+    ),
+    7: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "aside"
+        "foot",
+        grid-template-rows: $header-height $nav-height 1fr auto $footer-height,
+        grid-template-columns: 1fr
+    ),
+    8: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "aside",
+        grid-template-rows: $header-height $nav-height 1fr auto,
+        grid-template-columns: 1fr
+    ),
+    9: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "aside",
+        grid-template-rows: $header-height $nav-height 1fr auto,
+        grid-template-columns: 1fr
+    ),
+    10: (
+      grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "aside"
+        "foot",
+        grid-template-rows: $header-height $nav-height 1fr auto $footer-height,
+        grid-template-columns: 1fr
+    )
+  )
+) !default;
+
+// stylelint-enable
+
+
