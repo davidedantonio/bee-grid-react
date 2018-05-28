@@ -8,12 +8,10 @@ import MainExample from '../../MainExample';
  */
 export default function LayoutExampleOne() {
   return (
-    <div className="docs-example">
-      <Layout
-        type={1}
-        header={<HeaderExample />}
-        main={<MainExample />}
-        />
-    </div>
+    <Layout
+      type={1}
+      header={<HeaderExample />}
+      main={<MainExample />}
+      />
   );
 }

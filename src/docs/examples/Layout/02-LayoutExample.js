@@ -9,13 +9,11 @@ import NavExample from '../../NavExample';
  */
 export default function LayoutExampleTwo() {
   return (
-    <div className="docs-example">
-      <Layout
-        type={2}
-        header={<HeaderExample />}
-        main={<MainExample />}
-        nav={<NavExample />}
-        />
-    </div>
+    <Layout
+      type={2}
+      header={<HeaderExample />}
+      main={<MainExample />}
+      nav={<NavExample />}
+      />
   );
 }

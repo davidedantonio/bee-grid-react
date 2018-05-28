@@ -10,14 +10,12 @@ import FooterExample from '../../FooterExample';
  */
 export default function LayoutExampleSix() {
   return (
-    <div className="docs-example">
-      <Layout
-        type={6}
-        header={<HeaderExample />}
-        main={<MainExample />}
-        nav={<NavExample />}
-        footer={<FooterExample />}
-        />
-    </div>
+    <Layout
+      type={6}
+      header={<HeaderExample />}
+      main={<MainExample />}
+      nav={<NavExample />}
+      footer={<FooterExample />}
+      />
   );
 }

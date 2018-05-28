@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Beegrid have a set of predefined layouts. With a minimum set of classes and few components you can laying out an entire website.
+ */
 class Layout extends Component {
   render() {
     const {

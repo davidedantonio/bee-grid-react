@@ -25,14 +25,17 @@ class Example extends Component {
       <div className="example">
 
         { description && <h4>{ description }</h4> }
+        <div className="docs-example">
         <ExampleComponent />
-        <p>
-          <a href="" onClick={ this.toggleCode }>
+        </div>
+        <p className="mt-1">
+          <a className="button button-black" href="" onClick={ this.toggleCode }>
             { showCode ? "Hide" : "Show" } Code
           </a>
         </p>
 
         { showCode && <CodeExample>{code}</CodeExample> }
+        <hr />
       </div>
     )
   }

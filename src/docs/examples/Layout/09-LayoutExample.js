@@ -10,14 +10,12 @@ import AsideExample from '../../AsideExample';
  */
 export default function LayoutExampleNine() {
   return (
-    <div className="docs-example">
-      <Layout
-        type={9}
-        header={<HeaderExample />}
-        main={<MainExample />}
-        nav={<NavExample />}
-        aside={<AsideExample />}
-        />
-    </div>
+    <Layout
+      type={9}
+      header={<HeaderExample />}
+      main={<MainExample />}
+      nav={<NavExample />}
+      aside={<AsideExample />}
+      />
   );
 }
