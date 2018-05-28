@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Layout from '@webeetle/Layout';
 import Navigation from './Navigation';
 import ComponentPage from './ComponentPage';
 import componentData from './../../config/componentData';
@@ -24,11 +25,12 @@ class Docs extends Component {
     const component = route ? componentData.filter( component => component.name === route )[0] : componentData[0];
 
     return (
-      <div className="layout-2">
-        <Header />
-        <Navigation components={componentData.map(component => component.name)} />
-        <ComponentPage component={component} />
-      </div>
+      <Layout
+        type={2}
+        header={<Header />}
+        nav={<Navigation components={componentData.map(component => component.name)} />}
+        main={<ComponentPage component={component} />}
+      />
     )
   }
 }

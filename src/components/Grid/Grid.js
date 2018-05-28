@@ -8,7 +8,7 @@ import classNames from 'classnames';
 class Grid extends Component {
   render() {
     const {
-      children, container, cols, sm, md, lg, xl, custom, className, customCols, customGap
+      children, container, cols, sm, md, lg, xl, custom, className
     } = this.props;
 
     let containerCls = '';
@@ -61,12 +61,6 @@ Grid.propTypes = {
 
   /** Define the number of columns for your Grid System on Extra Large devices */
   xl: PropTypes.oneOf(Enum.COLS_NUMBER),
-
-  /** If specified define a grid with specified number of colums */
-  customCols: PropTypes.number,
-
-  /** If specified define a grid with specified number of colums */
-  customGap: PropTypes.number,
 };
 
 Grid.defaultProps = {
