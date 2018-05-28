@@ -116,7 +116,7 @@ sup {
 }
 
 a {
-  color: #009688;
+  color: #61dafb;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -449,17 +449,17 @@ template {
 }
 
 .docs-background-light-blue {
-  color: #fff;
-  background: #03a9f4;
+  color: #05aad7;
+  background: #61dafb;
 }
 
 .docs-background-light-blue a {
-  color: #a4e0fb;
+  color: #c6f2fe;
   text-decoration: none;
 }
 
 .docs-background-light-blue a:hover, .docs-background-light-blue a:focus {
-  color: #fff;
+  color: #05aad7;
   text-decoration: none;
 }
 
@@ -1352,39 +1352,39 @@ template {
 }
 
 .button.button-light-blue {
-  color: #fff;
-  background: #03a9f4;
+  color: #05aad7;
+  background: #61dafb;
   border-color: transparent;
 }
 
 .button.button-light-blue:hover {
-  color: #fff;
-  background: #039be0;
-  border-color: #039be0;
+  color: #05aad7;
+  background: #59c9e7;
+  border-color: #59c9e7;
 }
 
 .button.button-light-blue:focus, .button.button-light-blue:active {
-  color: #fff;
-  background: #038ecd;
-  border-color: #038ecd;
+  color: #05aad7;
+  background: #51b7d3;
+  border-color: #51b7d3;
 }
 
 .button.button-outline-light-blue {
-  color: #fff;
+  color: #05aad7;
   background: transparent;
-  border-color: #fff;
+  border-color: #05aad7;
 }
 
 .button.button-outline-light-blue:hover {
-  color: #03a9f4;
-  background: #fff;
-  border-color: #fff;
+  color: #61dafb;
+  background: #05aad7;
+  border-color: #05aad7;
 }
 
 .button.button-outline-light-blue:focus, .button.button-outline-light-blue:active {
-  color: #fff;
-  background: #038ecd;
-  border-color: #038ecd;
+  color: #05aad7;
+  background: #51b7d3;
+  border-color: #51b7d3;
 }
 
 .button.button-cyan {
@@ -1916,7 +1916,7 @@ template {
 }
 
 .color-light-blue {
-  color: #03a9f4;
+  color: #61dafb;
 }
 
 .color-cyan {
@@ -2038,7 +2038,7 @@ footer a {
 }
 
 .master-head .color-light-blue {
-  color: #03a9f4;
+  color: #61dafb;
 }
 
 .master-head .color-cyan {
@@ -2141,7 +2141,7 @@ footer a {
 }
 
 .highlighter-rouge {
-  color: #009688;
+  color: #61dafb;
 }
 
 code[class*="language-"],
@@ -2482,7 +2482,7 @@ pre[class*="language-"] {
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 300;
-  color: #009688;
+  color: #61dafb;
 }
 
 .page-description {
@@ -2535,13 +2535,17 @@ table td:first-child > code {
   border: 0.2rem solid #eee;
 }
 
+.docs-example .layout-example {
+  max-height: 400px;
+}
+
 .docs-example .grid-container-example {
   min-height: 100px;
-  background: #37bdaf;
+  background: #3bcff8;
 }
 
 .docs-example .container {
-  background: #b7e7e2;
+  background: #b8eefc;
 }
 
 .docs-example .container.container-tall {
@@ -2551,8 +2555,8 @@ table td:first-child > code {
 .docs-example .grid-item {
   color: #fff;
   text-align: center;
-  background: #37bdaf;
-  border: 0.2rem solid #2e9f93;
+  background: #11c6f8;
+  border: 0.2rem solid #0ea6d0;
 }
 
 .docs-example .grid-item.transparent {
@@ -2569,35 +2573,35 @@ table td:first-child > code {
   padding: 1rem;
   color: #fff;
   text-align: center;
-  background: #2e9f93 !important;
+  background: #0ea6d0 !important;
 }
 
 .docs-example main {
   padding: 1rem;
   color: #fff;
   text-align: center;
-  background: #33aea1 !important;
+  background: #10b6e4 !important;
 }
 
 .docs-example nav {
   padding: 1rem;
   color: #fff;
   text-align: center;
-  background: #47c2b5 !important;
+  background: #24cbf9 !important;
 }
 
 .docs-example aside {
   padding: 1rem;
   color: #fff;
   text-align: center;
-  background: #57c8bc !important;
+  background: #37cff9 !important;
 }
 
 .docs-example footer {
   padding: 1rem;
   color: #fff;
   text-align: center;
-  background: #67cdc2 !important;
+  background: #4ad4fa !important;
 }
 
 /*# sourceMappingURL=docs.css.map */

@@ -7,7 +7,7 @@ const ComponentPage = ({ component }) => {
   const { name, description, props, examples } = component;
 
   return (
-    <main>
+    <main className="p-2 overflow-y-auto">
       <h2>{ name }</h2>
       <p>{ description }</p>
 

@@ -3,6 +3,10 @@
   padding: 2rem;
   border: .2rem solid $grey-200;
 
+  .layout-example {
+    max-height: 400px;
+  }
+
   .grid-container-example {
     min-height: 100px;
     background: $grid-system-container-bg;
