@@ -23,25 +23,48 @@ class GridItem extends Component {
       colStartEndSm,
       colStartEndMd,
       colStartEndLg,
-      colStartEndXl
+      colStartEndXl,
+      align,
+      alignSm,
+      alignMd,
+      alignLg,
+      alignXl,
+      justify,
+      justifySm,
+      justifyMd,
+      justifyLg,
+      justifyXl
     } = this.props;
 
-    let toAddClasses = [];
-
-    if (colStartEnd !== undefined) {
-      toAddClasses.push({[`col-start-${colStartEnd.start}-end-${colStartEnd.end}`]: colStartEnd});
-    }
-    console.log(toAddClasses);
-
-    const classes = classNames(className, {
+    const classes = classNames({
       [`grid-item`]: true,
       [`${Classes.COLSPAN_PREFIX}-${colspan}`]: colspan,
       [`${Classes.COLSPAN_PREFIX_SM}-${colspanSm}`]: colspanSm,
       [`${Classes.COLSPAN_PREFIX_MD}-${colspanMd}`]: colspanMd,
       [`${Classes.COLSPAN_PREFIX_LG}-${colspanLg}`]: colspanLg,
       [`${Classes.COLSPAN_PREFIX_XL}-${colspanXl}`]: colspanXl,
-      ...toAddClasses
-    });
+      [`${Classes.COL_START_END_PREFIX}-${(colStartEnd)?colStartEnd.start:''}-end-${(colStartEnd)?colStartEnd.end:''}`]: colStartEnd,
+      [`${Classes.COL_START_END_PREFIX_SM}-${(colStartEndSm)?colStartEndSm.start:''}-end-${(colStartEndSm)?colStartEndSm.end:''}`]: colStartEndSm,
+      [`${Classes.COL_START_END_PREFIX_MD}-${(colStartEndMd)?colStartEndMd.start:''}-end-${(colStartEndMd)?colStartEndMd.end:''}`]: colStartEndMd,
+      [`${Classes.COL_START_END_PREFIX_LG}-${(colStartEndLg)?colStartEndLg.start:''}-end-${(colStartEndLg)?colStartEndLg.end:''}`]: colStartEndLg,
+      [`${Classes.COL_START_END_PREFIX_XL}-${(colStartEndXl)?colStartEndXl.start:''}-end-${(colStartEndXl)?colStartEndXl.end:''}`]: colStartEndXl,
+      [`${Classes.ROW_START_END_PREFIX}-${(rowStartEnd)?rowStartEnd.start:''}-end-${(rowStartEnd)?rowStartEnd.end:''}`]: rowStartEnd,
+      [`${Classes.ROW_START_END_PREFIX_SM}-${(rowStartEndSm)?rowStartEndSm.start:''}-end-${(rowStartEndSm)?rowStartEndSm.end:''}`]: rowStartEndSm,
+      [`${Classes.ROW_START_END_PREFIX_MD}-${(rowStartEndMd)?rowStartEndMd.start:''}-end-${(rowStartEndMd)?rowStartEndMd.end:''}`]: rowStartEndMd,
+      [`${Classes.ROW_START_END_PREFIX_LG}-${(rowStartEndLg)?rowStartEndLg.start:''}-end-${(rowStartEndLg)?rowStartEndLg.end:''}`]: rowStartEndLg,
+      [`${Classes.ROW_START_END_PREFIX_XL}-${(rowStartEndXl)?rowStartEndXl.start:''}-end-${(rowStartEndXl)?rowStartEndXl.end:''}`]: rowStartEndXl,
+      [`${Classes.ALIGN_SELF}-${align}`]: align,
+      [`${Classes.ALIGN_SELF_SM}-${alignSm}`]: alignSm,
+      [`${Classes.ALIGN_SELF_MD}-${alignMd}`]: alignMd,
+      [`${Classes.ALIGN_SELF_LG}-${alignLg}`]: alignLg,
+      [`${Classes.ALIGN_SELF_XL}-${alignXl}`]: alignXl,
+      [`${Classes.JUSTIFY_SELF}-${justify}`]: justify,
+      [`${Classes.JUSTIFY_SELF_SM}-${justifySm}`]: justifySm,
+      [`${Classes.JUSTIFY_SELF_MD}-${justifyMd}`]: justifyMd,
+      [`${Classes.JUSTIFY_SELF_LG}-${justifyLg}`]: justifyLg,
+      [`${Classes.JUSTIFY_SELF_XL}-${justifyXl}`]: justifyXl
+
+    }, className);
 
     return (
       <div
@@ -70,87 +93,86 @@ GridItem.propTypes = {
   colspanXl: PropTypes.oneOf(Enum.COLS_NUMBER),
 
   rowStartEnd: PropTypes.shape({
-    type: 'row',
-    breakPoint: '',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   rowStartEndSm: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'sm',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   rowStartEndMd: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'md',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   rowStartEndLg: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'lg',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   rowStartEndXl: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'xl',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   colStartEnd: PropTypes.shape({
-    type: 'row',
-    breakPoint: '',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   colStartEndSm: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'sm',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   colStartEndMd: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'md',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   colStartEndLg: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'lg',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
   colStartEndXl: PropTypes.shape({
-    type: 'row',
-    breakPoint: 'xl',
+    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
-  })
+  }),
+
+  align: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  alignSm: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  alignMd: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  alignLg: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  alignXl: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  justify: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  justifySm: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  justifyMd: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  justifyLg: PropTypes.oneOf(Enum.ALIGNMENT),
+
+  justifyXl: PropTypes.oneOf(Enum.ALIGNMENT)
 };
 
-GridItem.defaultProps = {
-  colStartEnd: undefined,
-  colStartEndSm: undefined,
-  colStartEndMd: undefined,
-  colStartEndLg: undefined,
-  colStartEndXl: undefined,
-  rowStartEnd: undefined,
-  rowStartEndSm: undefined,
-  rowStartEndMd: undefined,
-  rowStartEndLg: undefined,
-  rowStartEndXl: undefined
-};
+GridItem.defaultProps = {};
 
 export default GridItem;
