@@ -11,7 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(36, 39, 46, 0);
 }
 
 @-ms-viewport {
@@ -28,7 +28,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.4rem;
-  color: #000;
+  color: #24272e;
   text-align: left;
   background-color: #fff;
 }
@@ -660,11 +660,11 @@ template {
 
 .docs-background-black {
   color: #fff;
-  background: #000;
+  background: #24272e;
 }
 
 .docs-background-black a {
-  color: #a3a3a3;
+  color: #b0b1b4;
   text-decoration: none;
 }
 
@@ -1857,20 +1857,20 @@ template {
 
 .button.button-black {
   color: #fff;
-  background: #000;
+  background: #24272e;
   border-color: transparent;
 }
 
 .button.button-black:hover {
   color: #fff;
-  background: black;
-  border-color: black;
+  background: #21242a;
+  border-color: #21242a;
 }
 
 .button.button-black:focus, .button.button-black:active {
   color: #fff;
-  background: black;
-  border-color: black;
+  background: #1e2127;
+  border-color: #1e2127;
 }
 
 .button.button-outline-black {
@@ -1880,15 +1880,15 @@ template {
 }
 
 .button.button-outline-black:hover {
-  color: #000;
+  color: #24272e;
   background: #fff;
   border-color: #fff;
 }
 
 .button.button-outline-black:focus, .button.button-outline-black:active {
   color: #fff;
-  background: black;
-  border-color: black;
+  background: #1e2127;
+  border-color: #1e2127;
 }
 
 .color-red {
@@ -1972,7 +1972,7 @@ template {
 }
 
 .color-black {
-  color: #000;
+  color: #24272e;
 }
 
 h1 {
@@ -2094,7 +2094,7 @@ footer a {
 }
 
 .master-head .color-black {
-  color: #000;
+  color: #24272e;
 }
 
 .master-head p {
@@ -2148,7 +2148,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   hyphens: none;
   line-height: 1.5;
-  color: #000;
+  color: #24272e;
   text-align: left;
   word-break: normal;
   word-spacing: normal;
@@ -2449,7 +2449,7 @@ pre[class*="language-"] {
 }
 
 .docs-navbar a:hover, .docs-navbar a:active, .docs-navbar a.active {
-  color: #000;
+  color: #24272e;
   text-decoration: none;
 }
 

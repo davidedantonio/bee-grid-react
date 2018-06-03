@@ -9,6 +9,7 @@ class GridItem extends Component {
     const {
       children,
       className,
+      noPadding,
       colspan,
       colspanSm,
       colspanMd,
@@ -38,6 +39,7 @@ class GridItem extends Component {
 
     const classes = classNames({
       [`grid-item`]: true,
+      [`no-padding`]: noPadding,
       [`${Classes.COLSPAN_PREFIX}-${colspan}`]: colspan,
       [`${Classes.COLSPAN_PREFIX_SM}-${colspanSm}`]: colspanSm,
       [`${Classes.COLSPAN_PREFIX_MD}-${colspanMd}`]: colspanMd,
@@ -77,6 +79,9 @@ class GridItem extends Component {
 }
 
 GridItem.propTypes = {
+  /** No padding to grid item */
+  noPadding: PropTypes.bool,
+
   /** Colspan Value */
   colspan: PropTypes.oneOf(Enum.COLS_NUMBER),
 
@@ -173,6 +178,8 @@ GridItem.propTypes = {
   justifyXl: PropTypes.oneOf(Enum.ALIGNMENT)
 };
 
-GridItem.defaultProps = {};
+GridItem.defaultProps = {
+  noPadding: false
+};
 
 export default GridItem;
