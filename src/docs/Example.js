@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CodeExample from './CodeExample';
-import ReactMarkdown  from 'react-markdown';
 
 class Example extends Component {
   constructor(props) {
@@ -17,8 +16,7 @@ class Example extends Component {
   }
 
   render() {
-    const { showCode } = this.state;
-    const { code, description, name } = this.props.example;
+    const { code, name } = this.props.example;
     // Require dinamically JS Components
     const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
     const DescriptionComponent = require(`./descriptions/${this.props.componentName}/${name}`).default;
@@ -26,18 +24,12 @@ class Example extends Component {
     return (
       <div className="example">
         <DescriptionComponent />
-        { description && <h4>{ description }</h4> }
         <div className="docs-example">
-        <ExampleComponent />
+          <ExampleComponent />
         </div>
-        <p className="mt-1">
-          <a className="button button-black" href="" onClick={ this.toggleCode }>
-            { showCode ? "Hide" : "Show" } Code
-          </a>
-        </p>
-
-        { showCode && <CodeExample>{code}</CodeExample> }
-        <hr />
+        <div className="mt-1">
+          <CodeExample>{code}</CodeExample>
+        </div>
       </div>
     )
   }

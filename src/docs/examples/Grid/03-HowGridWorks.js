@@ -2,9 +2,6 @@ import React from 'react';
 import Grid from '@webeetle/Grid';
 import GridItem from '@webeetle/GridItem';
 
-/**
- * Beeui grid use a main container, as described before, and its child component represent the columns of the grid system.
- */
 export default function HowGridWorks() {
   return (
     <Grid

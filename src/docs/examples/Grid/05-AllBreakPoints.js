@@ -2,10 +2,6 @@ import React from 'react';
 import Grid from '@webeetle/Grid';
 import GridItem from '@webeetle/GridItem';
 
-/**
- * If you want that your grid have a different behavior for each device size, you can specify the number of columns on the container usign
- * bp={i} properties, where bp represent one of these breakpoints: small=sm, medium=md, large=lg, extra labrge=xl and {i} the number of columns at specified breakpoint.
- */
 export default function AllBreakPoints() {
   return (
     <Grid

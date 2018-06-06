@@ -2,9 +2,6 @@ import React from 'react';
 import Grid from '@webeetle/Grid';
 import GridItem from '@webeetle/GridItem';
 
-/**
- * You can specify columns number class on the container. For example if you want a grid with six columns for each brekpoint you can specify the cols={i} property, where i is a number between 1 and 12.
- */
 export default function LayoutGrid() {
   return (
     <Grid
