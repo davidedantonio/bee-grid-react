@@ -10,7 +10,7 @@ class Header extends Component {
           container="fluid" cols={2} className="mb-0">
           <GridItem className="p-0">
           <a href="">
-            <img className="brand" alt="BeeGrid react" src="./assets/images/beegrid_logo_react.png" />
+            <img className="brand" alt="BeeGrid react" src="/assets/images/beegrid_logo_react.png" />
           </a>
           </GridItem>
           <GridItem className="p-0" align="center" justify="end">

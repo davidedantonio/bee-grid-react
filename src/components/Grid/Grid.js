@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import * as Enum from '../../Utils/Enum';
-import * as Classes from '../../Utils/Classes';
+import * as Enum from '../../utils/Enum';
+import * as Classes from '../../utils/Classes';
 import classNames from 'classnames';
-
 
 class Grid extends Component {
   render() {

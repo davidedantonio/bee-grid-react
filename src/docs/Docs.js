@@ -5,6 +5,7 @@ import ComponentPage from './ComponentPage';
 import componentData from './../../config/componentData';
 import Header from './Header';
 import './scss/docs.scss';
+import './../../node_modules/highlight.js/styles/vs2015.css';
 
 class Docs extends Component {
   constructor(props) {

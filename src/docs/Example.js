@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CodeExample from './CodeExample';
+import ReactMarkdown  from 'react-markdown';
 
 class Example extends Component {
   constructor(props) {
@@ -20,10 +21,11 @@ class Example extends Component {
     const { code, description, name } = this.props.example;
     // Require dinamically JS Components
     const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
+    const DescriptionComponent = require(`./descriptions/${this.props.componentName}/${name}`).default;
 
     return (
       <div className="example">
-
+        <DescriptionComponent />
         { description && <h4>{ description }</h4> }
         <div className="docs-example">
         <ExampleComponent />
