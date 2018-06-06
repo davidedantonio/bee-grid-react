@@ -50,7 +50,7 @@ export default function LayoutGrid() {
           </tr>
           <tr>
             <th className="text-nowrap" scope="row"># of columns</th>
-            <td colspan="5">12</td>
+            <td colSpan="5">12</td>
           </tr>
           <tr>
             <th className="text-nowrap" scope="row">Grid gap</th>
@@ -62,7 +62,7 @@ export default function LayoutGrid() {
           </tr>
         </tbody>
       </table>
-      <p>You can specify columns number class on the <code>Grid</code> compoent with <code>cols</code> property. For example if you want a grid with six columns for each brekpoint you can specify the <code>cols={6}</code> property, where i is a number between 1 and 12.</p>
+      <p>You can specify columns number class on the <code>Grid</code> component with <code>cols</code> property. For example if you want a grid with six columns for each brekpoint you can specify the <code>cols={6}</code> property.</p>
     </div>
   );
 }
