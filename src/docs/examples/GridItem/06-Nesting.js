@@ -2,9 +2,6 @@ import React from 'react';
 import Grid from '@webeetle/Grid';
 import GridItem from '@webeetle/GridItem';
 
-/**
- *
- */
 export default function Nesting() {
   return (
     <Grid
