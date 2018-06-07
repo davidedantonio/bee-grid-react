@@ -79,102 +79,197 @@ class GridItem extends Component {
 }
 
 GridItem.propTypes = {
-  /** No padding to grid item */
+  /** If false no padding will added to GridItem */
   noPadding: PropTypes.bool,
 
-  /** Colspan Value */
+  /**
+   * If specified, give to GridItem the ability to span over columns.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   colspan: PropTypes.oneOf(Enum.COLS_NUMBER),
 
-  /** Colspan Small devices Value */
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * on Small devices. You need to specify an object like {start: 1, end: 3}
+   */
   colspanSm: PropTypes.oneOf(Enum.COLS_NUMBER),
 
-  /** Colspan Medium devices Value */
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * on Medium devices. You need to specify an object like {start: 1, end: 3}
+   */
   colspanMd: PropTypes.oneOf(Enum.COLS_NUMBER),
 
-  /** Colpspan Large devices Value */
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * on Large devices. You need to specify an object like {start: 1, end: 3}
+   */
   colspanLg: PropTypes.oneOf(Enum.COLS_NUMBER),
 
-  /** Colspan Extra large devices Value */
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * on Extra Large devices. You need to specify an object like {start: 1, end: 3}
+   */
   colspanXl: PropTypes.oneOf(Enum.COLS_NUMBER),
 
+  /**
+   * If specified, give to GridItem the ability to span over rows
+   * from a certain value to other.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   rowStartEnd: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over rows
+   * from a certain value to other on Small devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   rowStartEndSm: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over rows
+   * from a certain value to other on Medium devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   rowStartEndMd: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over rows
+   * from a certain value to other on Large devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   rowStartEndLg: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over rows
+   * from a certain value to other on Extra Large devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   rowStartEndXl: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * from a certain value to other.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   colStartEnd: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * from a certain value to other on Small devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   colStartEndSm: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * from a certain value to other on Medium devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   colStartEndMd: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * from a certain value to other on Large devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   colStartEndLg: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, give to GridItem the ability to span over columns
+   * from a certain value to other on Extra Large devices.
+   * You need to specify an object like {start: 1, end: 3}
+   */
   colStartEndXl: PropTypes.shape({
-    breakPoint: PropTypes.string,
     start: PropTypes.oneOf(Enum.COLS_NUMBER),
     end: PropTypes.oneOf(Enum.COLS_NUMBER)
   }),
 
+  /**
+   * If specified, align a GridItem vertically.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   align: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem vertically on Small devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   alignSm: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem vertically on Medium devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   alignMd: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem vertically on Large devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   alignLg: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem vertically on Extra Large devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   alignXl: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem horizontally.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   justify: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem horizontally on Small devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   justifySm: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem horizontally on Medium devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   justifyMd: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem horizontally on Large devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   justifyLg: PropTypes.oneOf(Enum.ALIGNMENT),
 
+  /**
+   * If specified, align a GridItem horizontally on Extra Large devices.
+   * Possible values are: 'auto', 'start', 'end', 'center', 'baseline', 'stretch'
+   */
   justifyXl: PropTypes.oneOf(Enum.ALIGNMENT)
 };
 

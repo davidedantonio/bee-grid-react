@@ -18,7 +18,7 @@ const Properties = ({ props }) => {
           Object.keys(props).map(key => {
             return (
               <tr key={key}>
-                <td>{key}</td>
+                <td><code>{key}</code></td>
                 <td>{props[key].description}</td>
                 <td>{(props[key].type)?props[key].type.name:""}</td>
                 <td>{props[key].defaultValue && props[key].defaultValue.value}</td>

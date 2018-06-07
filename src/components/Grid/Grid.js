@@ -63,8 +63,7 @@ Grid.propTypes = {
 };
 
 Grid.defaultProps = {
-  container: 'default',
-  custom: false
+  container: 'default'
 };
 
 export default Grid;
