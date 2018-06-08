@@ -9,9 +9,12 @@ class Header extends Component {
         <Grid
           container="fluid" cols={2} className="mb-0">
           <GridItem className="p-0">
-          <a href="">
-            <img className="brand" alt="BeeGrid react" src="/assets/images/beegrid_logo_react.png" />
-          </a>
+            <a href="">
+              <img className="brand" alt="BeeGrid react" src="/assets/images/beegrid_logo_react.png" />
+            </a>
+            <ul className="menu">
+              <li><a href="Documentation">Documentation</a></li>
+            </ul>
           </GridItem>
           <GridItem className="p-0" align="center" justify="end">
             <ul className="menu">
