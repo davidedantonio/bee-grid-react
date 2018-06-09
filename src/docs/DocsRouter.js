@@ -1,24 +1,25 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Documentation from './Documentation';
 import DocsIndex from './DocsIndex';
+import { withRouter } from 'react-router'
 
 class DocsRouter extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <div>
           <Route
-            path={`/`}
+            exact
+            path='/'
             component={DocsIndex}
           />
           <Route
-            exact
-            path={`/documentation`}
+            path='/documentation'
             component={Documentation}
           />
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -10,7 +11,7 @@ const Navigation = ({ components }) => {
             components.map( name => {
               return (
                 <li key={name}>
-                  <a href={`${name}`}>{name}</a>
+                  <a href={`/documentation/${name}`}>{name}</a>
                 </li>
               );
             })

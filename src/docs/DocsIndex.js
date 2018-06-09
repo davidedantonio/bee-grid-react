@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import Grid from '@webeetle/Grid';
-import GridItem from '@webeetle/GridItem';
+import Layout from '@webeetle/Layout';
+import MainPage from './components/MainPage/MainPage';
+import Header from './components/MainComponents/Header';
 
 class DocsIndex extends Component {
   render() {
     return (
-      <Grid cols={1} colsSm={1} colsMd={3} colsLg={3}>
-        <GridItem></GridItem>
-      </Grid>
+      <Layout
+        type={1}
+        header={<Header background="blue" />}
+        main={<MainPage />}
+      />
     );
   }
 }

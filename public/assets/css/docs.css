@@ -347,7 +347,7 @@ template {
   width: 1.4rem;
   height: 1.4rem;
   vertical-align: text-top;
-  fill: #a3d9d4;
+  fill: white;
 }
 
 .docs-header .menu > li .menu-svg:hover {
@@ -435,11 +435,11 @@ template {
 
 .docs-background-blue {
   color: #fff;
-  background: #2196f3;
+  background: #41B0D7;
 }
 
 .docs-background-blue a {
-  color: #afd9fb;
+  color: #bbe3f1;
   text-decoration: none;
 }
 
@@ -1317,20 +1317,20 @@ template {
 
 .button.button-blue {
   color: #fff;
-  background: #2196f3;
+  background: #41B0D7;
   border-color: transparent;
 }
 
 .button.button-blue:hover {
   color: #fff;
-  background: #1e8ae0;
-  border-color: #1e8ae0;
+  background: #3ca2c6;
+  border-color: #3ca2c6;
 }
 
 .button.button-blue:focus, .button.button-blue:active {
   color: #fff;
-  background: #1c7ecc;
-  border-color: #1c7ecc;
+  background: #3794b5;
+  border-color: #3794b5;
 }
 
 .button.button-outline-blue {
@@ -1340,15 +1340,15 @@ template {
 }
 
 .button.button-outline-blue:hover {
-  color: #2196f3;
+  color: #41B0D7;
   background: #fff;
   border-color: #fff;
 }
 
 .button.button-outline-blue:focus, .button.button-outline-blue:active {
   color: #fff;
-  background: #1c7ecc;
-  border-color: #1c7ecc;
+  background: #3794b5;
+  border-color: #3794b5;
 }
 
 .button.button-light-blue {
@@ -1912,7 +1912,7 @@ template {
 }
 
 .color-blue {
-  color: #2196f3;
+  color: #41B0D7;
 }
 
 .color-light-blue {
@@ -2034,7 +2034,7 @@ footer a {
 }
 
 .master-head .color-blue {
-  color: #2196f3;
+  color: #41B0D7;
 }
 
 .master-head .color-light-blue {

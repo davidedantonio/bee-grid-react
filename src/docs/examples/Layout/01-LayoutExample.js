@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@webeetle/Layout';
-import HeaderExample from '../../HeaderExample';
-import MainExample from '../../MainExample';
+import HeaderExample from '../../components/Examples/HeaderExample';
+import MainExample from '../../components/Examples/MainExample';
 
 /**
  * Layout Example #1
