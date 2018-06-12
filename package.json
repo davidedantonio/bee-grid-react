@@ -1,6 +1,27 @@
 {
-  "name": "bee-grid-react",
+  "name": "@webeetle/bee-grid-react",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Davide D'Antonio",
+    "email": "davide.dantonio@webeetle.com",
+    "url": "https://twitter.com/davidedantonio"
+  },
+  "contributors": [
+    "Riccardo Tartaglia <tartaglia.riccardo@gmail.com> (https://twitter.com/RikTarWeb)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidedantonio/bee-grid-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidedantonio/bee-grid-react/issues"
+  },
+  "files": [
+    "lib"
+  ],
   "private": true,
   "dependencies": {
     "@webeetle/bee-grid": "^1.0.0-rc.2",

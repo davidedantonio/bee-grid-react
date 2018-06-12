@@ -4,7 +4,7 @@ class IndexSourceCode extends Component {
   render() {
     return (
       <div>
-        <h2 className="color-blue">Sorce Code</h2>
+        <h2 className="color-blue">Source Code</h2>
         <p>
           Clone Beegrid React repository from Github and start building awesome grid for your websites.
         </p>
