@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Documentation from './Documentation';
 import DocsIndex from './DocsIndex';
-import { withRouter } from 'react-router'
 
 class DocsRouter extends React.Component {
   render() {
@@ -11,11 +10,11 @@ class DocsRouter extends React.Component {
         <div>
           <Route
             exact
-            path='/'
+            path={`${process.env.PUBLIC_URL}/`}
             component={DocsIndex}
           />
           <Route
-            path='/documentation'
+            path={`${process.env.PUBLIC_URL}/documentation`}
             component={Documentation}
           />
         </div>
