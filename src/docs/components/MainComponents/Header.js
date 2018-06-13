@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'react-router-dom';
 import Grid from '@webeetle/Grid';
 import GridItem from '@webeetle/GridItem';
 
@@ -17,7 +18,7 @@ class Header extends Component {
               <img className="brand" alt="BeeGrid react" src={logo} />
             </a>
             <ul className="menu">
-              <li><a href="/documentation">Documentation</a></li>
+              <li><Link to="/documentation">Documentation</Link></li>
             </ul>
           </GridItem>
           <GridItem className="p-0" align="center" justify="end">
