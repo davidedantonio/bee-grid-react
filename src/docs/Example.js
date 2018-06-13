@@ -18,7 +18,6 @@ class Example extends Component {
   render() {
     const { code, name } = this.props.example;
     // Require dinamically JS Components
-    console.log(name);
     const ExampleComponent = require(`./examples/${this.props.componentName}/${name}`).default;
     const DescriptionComponent = require(`./descriptions/${this.props.componentName}/${name}`).default;
 

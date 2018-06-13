@@ -17,6 +17,14 @@ class DocsRouter extends React.Component {
             path='/documentation'
             component={Documentation}
           />
+          <Route
+            path='/documentation/GridItem'
+            component={Documentation}
+          />
+          <Route
+            path='/documentation/Layout'
+            component={Documentation}
+          />
         </div>
       </Router>
     );
