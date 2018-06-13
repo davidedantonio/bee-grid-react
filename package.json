@@ -73,7 +73,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "main": "./src/index.js",
-  "homepage": "http://react.beegrid.io/",
+  "homepage": ".",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel css:compile start:docs gen:docs-watch",
