@@ -15,9 +15,9 @@ class Header extends Component {
         <Grid
           container="fluid" cols={2} className="mb-0">
           <GridItem className="p-0">
-            <a href="/">
+            <Link to="/">
               <img className="brand" alt="BeeGrid react" src={logo} />
-            </a>
+            </Link>
             <ul className="menu">
               <li><Link to="/documentation">Documentation</Link></li>
             </ul>
