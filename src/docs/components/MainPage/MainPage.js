@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Grid from '@webeetle/Grid';
 import GridItem from '@webeetle/GridItem';
 import IndexUsage from './IndexUsage';
 import IndexInstall from './IndexInstall';
 import IndexSourceCode from './IndexSourceCode';
+import config from '../../config';
 
 class MainPage extends Component {
   render() {
@@ -15,13 +17,13 @@ class MainPage extends Component {
               <img src="assets/images/beegrid_home.png" alt="BeeGrid React" />
             </div>
             <h1 className="color-white">BeeGrid React</h1>
-            <p>A series of React components based on <a href="">BeeGrid</a> microframework. Now you can use BeeGrid React to build
+            <p>A series of React components based on <a href={config.beegrid}>BeeGrid</a> microframework. Now you can use BeeGrid React to build
             various types of grids thanks to a twelve column system,
               five default responsive tiers, and many predefined layout.</p>
 
             <Grid cols={1} sm={1} md={1} lg={1} xl={1}>
               <GridItem justify="center" align="center">
-                <a href="/Documentation" className="button button-outline-blue button-lg">Get Started</a>
+                <Link to="/documentation" className="button button-outline-blue button-lg">Get Started</Link>
               </GridItem>
             </Grid>
           </GridItem>

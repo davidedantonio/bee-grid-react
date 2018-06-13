@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Navigation = ({ components }) => {
@@ -11,7 +11,7 @@ const Navigation = ({ components }) => {
             components.map( name => {
               return (
                 <li key={name}>
-                  <a href={`/documentation/${name}`}>{name}</a>
+                  <Link href={`/documentation/${name}`}>{name}</Link>
                 </li>
               );
             })
