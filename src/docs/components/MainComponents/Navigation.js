@@ -11,7 +11,7 @@ const Navigation = ({ components }) => {
             components.map( name => {
               return (
                 <li key={name}>
-                  <a href={`/documentation/${name}`}>{name}</a>
+                  <Link to={`/documentation/${name}`}>{name}</Link>
                 </li>
               );
             })
