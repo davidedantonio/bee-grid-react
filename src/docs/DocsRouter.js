@@ -10,11 +10,11 @@ class DocsRouter extends React.Component {
         <div>
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/`}
+            path='/'
             component={DocsIndex}
           />
           <Route
-            path={`${process.env.PUBLIC_URL}/documentation`}
+            path='/documentation'
             component={Documentation}
           />
         </div>
