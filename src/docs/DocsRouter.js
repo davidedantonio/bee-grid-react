@@ -14,14 +14,22 @@ class DocsRouter extends React.Component {
             component={DocsIndex}
           />
           <Route
+            exact
             path='/documentation'
             component={Documentation}
           />
           <Route
+            exact
+            path='/documentation/Grid'
+            component={Documentation}
+          />
+          <Route
+            exact
             path='/documentation/GridItem'
             component={Documentation}
           />
           <Route
+            exact
             path='/documentation/Layout'
             component={Documentation}
           />
