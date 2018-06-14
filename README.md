@@ -34,7 +34,7 @@ Beegrid's React documentation, included in this repo in the root directory, is b
 ### Running documentation locally
 
 1. Run `npm install` to install Node.js dependencies.
-2. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
+2. Run `npm run test` to lauch test suite.
 3. From the root `/bee-grid-react` directory, run `npm run gen:docs-watch` in the command line.
 4. Open `http://localhost:3000` in your browser, and voilà.
 
