@@ -5,9 +5,9 @@ import * as Classes from '../../utils/Classes';
 import classNames from 'classnames';
 
 class GridItem extends Component {
-  render() {
+
+  getClasses = () => {
     const {
-      children,
       className,
       noPadding,
       colspan,
@@ -37,7 +37,7 @@ class GridItem extends Component {
       justifyXl
     } = this.props;
 
-    const classes = classNames({
+    const classes = classNames(className, {
       [`grid-item`]: true,
       [`no-padding`]: noPadding,
       [`${Classes.COLSPAN_PREFIX}-${colspan}`]: colspan,
@@ -65,8 +65,14 @@ class GridItem extends Component {
       [`${Classes.JUSTIFY_SELF_MD}-${justifyMd}`]: justifyMd,
       [`${Classes.JUSTIFY_SELF_LG}-${justifyLg}`]: justifyLg,
       [`${Classes.JUSTIFY_SELF_XL}-${justifyXl}`]: justifyXl
+    });
 
-    }, className);
+    return classes;
+  };
+
+  render() {
+    const classes = this.getClasses();
+    const { children } = this.props;
 
     return (
       <div

@@ -5,9 +5,10 @@ import * as Classes from '../../utils/Classes';
 import classNames from 'classnames';
 
 class Grid extends Component {
-  render() {
+
+  getClasses = () => {
     const {
-      children, container, cols, sm, md, lg, xl, custom, className
+      container, cols, sm, md, lg, xl, custom, className
     } = this.props;
 
     let containerCls = '';
@@ -32,6 +33,12 @@ class Grid extends Component {
       [`${Classes.PREFIX_COLS_XL}-${xl}`]: xl,
       [`${Classes.CUSTOM_GRID}`]: custom
     });
+    return classes;
+  };
+
+  render() {
+    const classes = this.getClasses();
+    const { children } = this.props;
 
     return (
       <div
