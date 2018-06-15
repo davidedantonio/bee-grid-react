@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
 import * as Enum from '../../utils/Enum';
 import * as Classes from '../../utils/Classes';
-import classNames from 'classnames';
 
 class GridItem extends Component {
 

@@ -23,9 +23,7 @@ class Documentation extends Component {
 
   render() {
     let { route } = this.state;
-    console.log(route);
     const component = route ? componentData.filter( component => component.name === route )[0] : componentData[0];
-    console.log(component);
 
     return (
       <Layout
