@@ -44,6 +44,7 @@ function createPackageFile() {
   .then((packageData) => {
     const {
       author,
+      contributors,
       version,
       description,
       keywords,
@@ -58,6 +59,7 @@ function createPackageFile() {
     const minimalPackage = {
       name: '@webeetle/bee-grid-react',
       author,
+      contributors,
       version,
       description,
       main: './index.js',
