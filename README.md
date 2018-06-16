@@ -18,8 +18,8 @@
 Several quick start options are available:
 
 - Clone the repo: `https://github.com/davidedantonio/bee-grid-react.git`
-- Install with [npm](https://www.npmjs.com/): `npm install @webeetle/bee-grid-react`
-- Install with [yarn](https://yarnpkg.com/): `yarn add @webeetle/bee-grid-react`
+- Install with [npm](https://www.npmjs.com/): `npm install @beetle/bee-grid-react`
+- Install with [yarn](https://yarnpkg.com/): `yarn add @beetle/bee-grid-react`
 -
 ## Bugs and feature requests
 
@@ -34,7 +34,7 @@ Beegrid's React documentation, included in this repo in the root directory, is b
 ### Running documentation locally
 
 1. Run `npm install` to install Node.js dependencies.
-2. Run `npm run test` to lauch test suite.
+2. Run `npm run test` to launch test suite.
 3. From the root `/bee-grid-react` directory, run `npm run gen:docs-watch` in the command line.
 4. Open `http://localhost:3000` in your browser, and voilà.
 

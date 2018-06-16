@@ -57,7 +57,7 @@ function createPackageFile() {
     } = packageData;
 
     const minimalPackage = {
-      name: '@webeetle/bee-grid-react',
+      name: '@beetle/bee-grid-react',
       author,
       contributors,
       version,
