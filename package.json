@@ -1,6 +1,6 @@
 {
   "name": "@webeetle/bee-grid-react",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.7",
   "main": "./lib/index.js",
   "homepage": "http://react.beegrid.io",
   "private": true,
@@ -92,6 +92,12 @@
   "license": "MIT",
   "babel": {
     "presets": [
+      [
+        "env",
+        {
+          "modules": "commonjs"
+        }
+      ],
       "react-app"
     ]
   },
