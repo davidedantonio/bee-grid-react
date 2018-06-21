@@ -29,7 +29,7 @@ Have a bug or a feature request? Search for existing and closed issues. If your 
 
 #### You can find the docs at: <http://react.beegrid.io>
 
-Beegrid's React documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/). The docs may also be run locally.
+Beegrid's React documentation, included in this repo in the root directory, is built with [React DocGen](https://github.com/reactjs/react-docgen). The docs may also be run locally.
 
 ### Running documentation locally
 

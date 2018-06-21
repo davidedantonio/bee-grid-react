@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Navigation = ({ components }) => {
   return (
-    <nav className="docs-navbar">
+    <nav className="docs-navbar" data-navbar>
       <div className="docs-navbar-content p-1">
         <ul>
           {
