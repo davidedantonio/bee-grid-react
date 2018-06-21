@@ -39,6 +39,12 @@ class MainPage extends Component {
             <IndexSourceCode />
           </GridItem>
         </Grid>
+        <footer>
+          <p>
+              Crafted with all the love in the world by <a href="http://webeetle.com">@webeetle</a>.<br />
+              Currently { config.current_version }. Code licensed MIT.
+          </p>
+        </footer>
       </main>
     )
   }
