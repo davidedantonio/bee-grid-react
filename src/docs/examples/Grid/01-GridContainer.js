@@ -1,5 +1,5 @@
 import React from 'react';
-import Grid from '@webeetle/Grid';
+import Grid from '@beetle/Grid';
 
 export default function GridContainer() {
   return (

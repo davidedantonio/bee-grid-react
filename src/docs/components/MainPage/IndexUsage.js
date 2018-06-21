@@ -5,8 +5,8 @@ class IndexUsage extends Component {
   render() {
     const code = (
 `import React from 'react';
-import Grid from '@webeetle/Grid';
-import GridItem from '@webeetle/GridItem';
+import Grid from '@beetle/Grid';
+import GridItem from '@beetle/GridItem';
 
 const App = () => (
   <Grid container="fluid" cols={2}>

@@ -1,6 +1,6 @@
 import React from 'react';
-import Grid from '@webeetle/Grid';
-import GridItem from '@webeetle/GridItem';
+import Grid from '@beetle/Grid';
+import GridItem from '@beetle/GridItem';
 
 export default function FromTo() {
   return (

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Grid from '@webeetle/Grid';
-import GridItem from '@webeetle/GridItem';
+import Grid from '@beetle/Grid';
+import GridItem from '@beetle/GridItem';
 import IndexUsage from './IndexUsage';
 import IndexInstall from './IndexInstall';
 import IndexSourceCode from './IndexSourceCode';
@@ -41,7 +41,7 @@ class MainPage extends Component {
         </Grid>
         <footer>
           <p>
-              Crafted with all the love in the world by <a href="http://webeetle.com">@webeetle</a>.<br />
+              Crafted with all the love in the world by <a href="http://webeetle.com">@beetle</a>.<br />
               Currently { config.current_version }. Code licensed MIT.
           </p>
         </footer>

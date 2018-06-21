@@ -12,7 +12,7 @@ class IndexInstall extends Component {
         <figure className="highlight">
           <pre>
             <code className="language-sh" data-lang="sh">
-              npm <span className="nb">install</span> @webeetle/bee-grid-react
+              npm <span className="nb">install</span> @beetle/bee-grid-react
             </code>
           </pre>
         </figure>
@@ -22,7 +22,7 @@ class IndexInstall extends Component {
         <figure className="highlight">
           <pre>
             <code className="language-sh" data-lang="sh">
-              yarn add @webeetle/bee-grid-react
+              yarn add @beetle/bee-grid-react
             </code>
           </pre>
         </figure>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Grid from '@webeetle/Grid';
-import GridItem from '@webeetle/GridItem';
+import Grid from '@beetle/Grid';
+import GridItem from '@beetle/GridItem';
 import config from '../../config';
 
 class Header extends Component {

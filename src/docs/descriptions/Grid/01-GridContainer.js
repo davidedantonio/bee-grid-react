@@ -8,7 +8,7 @@ export default function GridContainer() {
 
       <h2>Default container</h2>
       <p>
-        Default container and fluid container. For default container you only need to import <code>@webeetle/Grid</code> component.
+        Default container and fluid container. For default container you only need to import <code>@beetle/Grid</code> component.
       </p>
     </div>
   );

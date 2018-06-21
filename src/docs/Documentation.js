@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from '@webeetle/Layout';
+import Layout from '@beetle/Layout';
 import Header from './components/MainComponents/Header';
 import Navigation from './components/MainComponents/Navigation';
 import ComponentPage from './ComponentPage';
